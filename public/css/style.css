@@ -1,0 +1,155 @@
+body{
+    background-color: #999999;
+    font-size: 3vh;
+    color: black;
+    margin: 0;
+    height: 100vh;
+}
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    background-color: #c4c4c4;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 6vh;
+    align-items: center;
+}
+
+ul button{
+    font-size: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color:white;
+}
+
+fieldset{
+    width: fit-content;
+    margin: 5vh auto;
+    border: none;
+    border-radius: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input, select, textarea, .btn-update, .btn-save, .btn-plus, fieldset a{
+    font-size: 2vh;
+}
+
+fieldset a, .btn-update, .btn-save{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+fieldset, #container, .writersContainer, .publishersContainer, .categoriesContainer{
+    box-shadow: 0 0 5px 5px grey;
+    background-color: #c7c7c7;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vw;
+    width: 80vw;
+    margin: 0 10vw 5vh 10vw;
+}
+
+#container, .writersContainer, .publishersContainer, .categoriesContainer{
+    padding: 1vw;
+    border-radius: 10px;
+    font-size: 2.5vh;
+}
+
+#booksContainer, #writersContainer, #publishersContainer, #categoriesContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#data td:first-child{
+    padding-right: 1vw;
+}
+
+#data tr:last-child td{
+    padding-top: 2vh;
+}
+
+#stars i{
+    cursor: pointer;
+}
+
+.writersContainer{
+    width: 60vw;
+    margin: 0 20vw 5vh 20vw;
+    text-align: center;
+}
+
+.publishersContainer, .categoriesContainer{
+    margin: 0 35vw 5vh 35vw;
+    text-align: center;
+}
+
+.publishersContainer, .publishersContainer table, .categoriesContainer, .categoriesContainer table{
+    max-width: 30vw;
+}
+
+.publishersContainer table{
+    width: fit-content;
+}
+
+.btn-plus{
+    width: fit-content;
+    margin: 2vh auto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#publisherForm, #categoriesForm{
+    text-align: center;
+}
+
+.float-left{
+    float: left;
+}
+
+.title{
+    margin: center;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.content, .bio{
+    width: 50vw;
+    height: 10vh;
+}
+
+.contentContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+#nav{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+}
